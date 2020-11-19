@@ -30,7 +30,7 @@ Pour répondre à l'appel d'offre lancé par le laboratoire, notre startup innov
 ### Solutions fonctionnels
 
 - Un système capable d'**ajouter** et de **vérifier** la cohérence des nouvelles données.
-- Un système de **gestion** des astres.
+- Un système de **gestion** et de **classification** manuel depuis l'interface web des astres.
 - L'utilisateur peut **visualiser** les étoiles triées en fonction d'une catégorie.
 - (optionnel si le temps) possibilité d'ajouter des astres découvert par des amateurs, donc ajouter un système de rôle :
   - administrateur, chercheur ou amateur.
@@ -41,6 +41,8 @@ Pour répondre à l'appel d'offre lancé par le laboratoire, notre startup innov
 - **Serveur Web Apache** pour la délivrance des pages Web. **Apache** est aujourd'hui le serveur le plus populaire et dispose de nombreux modules.
 - **PHP** pour la génération dynamique de pages web. **PHP** est un Langage simple et rapide à mettre en œuvre pour la création de site web. Bibliothèques très fournies.
 - **Docker** pour le packaging de l'application dans un environnement maîtrisée et cloisonné.
+- Le développement de fonctions en **PHP** permettant d'ajouter depuis l'interface web les caractéristiques d'une planète.
+- Interroger la BDD avec **SQL** pour afficher les données sélectionnées par l'utilisateur.
 
 ## Livrables
 
