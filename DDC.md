@@ -39,4 +39,4 @@
 
 ## Schéma entité association
 
-<img align="center" width="800" height="700" src="resources\images\CDC\bdd.png">
+<img align="center" width="1000" height="700" src="resources\images\CDC\bdd.png">
