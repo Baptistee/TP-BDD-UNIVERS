@@ -15,18 +15,18 @@
 | Age               | Âge du système                               | float    | 5          |                             |
 | UniteAge          | Unité de l'âge du système                    | Varchar  | 10         |                             |
 | NomA              | Nom de l'astre                               | Varchar  | 32         | NOT NULL                    |
-| TailleA           | Taille de l'astre                            | int      | 10         | valeur > 0                  |
+| TailleA           | Taille de l'astre                            | float    | 10         | valeur > 0                  |
 | TailleUnite       | Unité de la taille                           | Varchar  | 10         |                             |
-| MasseA            | Masse de l'astre                             | int      | 10         | valeur > 0                  |
+| MasseA            | Masse de l'astre                             | float    | 10         | valeur > 0                  |
 | MasseUnite        | Unité de la masse de l'astre                 | Varchar  | 10         |                             |
 | NomSat            | Nom du satellite                             | Varchar  | 32         | NOT NULL                    |
-| DistanceSatellite | Distance entre l'astre et le satellite       | int      | 10         | valeur > 0                  |
+| DistanceSatellite | Distance entre l'astre et le satellite       | float    | 10         | valeur > 0                  |
 | DistanceUnite     | Unité de la distance                         | Varchar  | 10         |                             |
 | TypeP             | Type de planète                              | Varchar  | 32         |                             |
 | TypeE             | Type d'étoile                                | Varchar  | 32         |                             |
-| TempSurface       | Température moyenne à la surface de l'étoile | int      | 5          | valeur > 0                  |
+| TempSurface       | Température moyenne à la surface de l'étoile | float    | 5          | valeur > 0                  |
 | TypeA             | Type d'astre                                 | Varchar  | 32         |                             |
-| Id                | Id de l'astre                                | int      | 3          | NOT NULL                    |
+| Id                | Id de l'astre                                | float    | 3          | NOT NULL                    |
 | Attribut          | Attribut de l'astre                          | Varchar  | 32         |                             |
 | Valeur            | Valeur de l'attribut de l'astre              | Varchar  | 32         |                             |
 
