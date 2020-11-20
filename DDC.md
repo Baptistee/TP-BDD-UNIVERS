@@ -12,11 +12,13 @@
 | NomS              | Nom du système                               | Varchar  | 32         | NOT NULL                    |
 | TypeS             | Type de système                              | Varchar  | 32         |                             |
 | NbPlanetes        | Nombre de planètes du système                | int      | 3          | valeur calculée             |
+| Age               | Âge du système                               | float    | 5          |                             |
+| UniteAge          | Unité de l'âge du système                    | Varchar  | 10         |                             |
 | NomA              | Nom de l'astre                               | Varchar  | 32         | NOT NULL                    |
 | TailleA           | Taille de l'astre                            | int      | 10         | valeur > 0                  |
 | TailleUnite       | Unité de la taille                           | Varchar  | 10         |                             |
 | MasseA            | Masse de l'astre                             | int      | 10         | valeur > 0                  |
-| MasseUnite        | Masse de l'astre                             | Varchar  | 10         |                             |
+| MasseUnite        | Unité de la masse de l'astre                 | Varchar  | 10         |                             |
 | NomSat            | Nom du satellite                             | Varchar  | 32         | NOT NULL                    |
 | DistanceSatellite | Distance entre l'astre et le satellite       | int      | 10         | valeur > 0                  |
 | DistanceUnite     | Unité de la distance                         | Varchar  | 10         |                             |
@@ -31,9 +33,9 @@
 ## Schéma relationnel
 
 - **Galaxie** ( *NomG, TypeG, Lon, Lat, UnitePosition )
-- **Systeme** ( *NomS, #NomG, TypeS, Lon, Lat, UnitePosition, NbPlanetes )
+- **Systeme** ( *NomS, #NomG, TypeS, Age, UniteAge, UnitePosition, NbPlanetes )
 - **Astre** ( *NomA, #NomS, TailleA, TailleUnite, MasseA, MasseUnite )
-- **Graviter** (*NomSat, #NomA, DistanceSatellite )
+- **Graviter** (*NomSat, #NomA, DistanceSatellite, DistanceUnite )
 - **Planete** (*#NomA, TypeP )
 - **Etoile** ( *#NomA, TypeE, TempSurface )
 - **AutreTypeAstre** ( *#NomA, TypeA )
